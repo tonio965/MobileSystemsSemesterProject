@@ -14,6 +14,8 @@ function HomeScreen({navigation}) {
   return (
     <View style={styles.container}>
 
+        <Text style={styles.topBar}>Device Tester</Text>
+
         <TouchableOpacity
           style={styles.item}
           onPress={() => navigation.navigate('SecondScreen')}>
@@ -83,6 +85,11 @@ function HomeScreen({navigation}) {
           onPress={() => navigation.navigate('CreditsScreen')}>
             <Text style={styles.text}>Credits</Text>
         </TouchableOpacity>
+
+        <View
+          style={styles.item3}>
+        </View>
+
 
 
     </View>
@@ -201,5 +208,16 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     fontWeight: "bold"
+  },
+  topBar: {
+    fontSize: 25,
+    padding: 15,
+    borderRadius:20,
+    textAlign: "center",
+    width: '100%',
+    fontWeight: "bold",
+    backgroundColor:'#A371EC',
+    marginBottom: 20
+
   }
 })
