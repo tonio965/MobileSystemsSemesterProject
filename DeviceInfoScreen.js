@@ -1,7 +1,6 @@
 import React, {useState, useEffect } from 'react';
-import { View, Text, Dimensions,FlatList, TouchableOpacity, StyleSheet, StatusBar, Alert } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text, Dimensions,FlatList, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+
 import * as Device from 'expo-device';
 
 export default function DeviceInfoScreen({navigation}) {

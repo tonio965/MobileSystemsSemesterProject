@@ -1,8 +1,6 @@
 import React, {useState, useEffect } from 'react';
-import { View, Text, Dimensions,FlatList, TouchableOpacity, StatusBar, Alert, StyleSheet} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Barometer, Magnetometer, Gyroscope } from 'expo-sensors';
+import { View, Text, Dimensions, StatusBar, Alert, StyleSheet} from 'react-native';
+import { Barometer, Magnetometer} from 'expo-sensors';
 
 export default function OtherSensorsScreen({navigation}) {
     const [data, setData] = useState({
@@ -21,8 +19,6 @@ export default function OtherSensorsScreen({navigation}) {
       }, []);
 
 
-    const {x, y ,z} = data;
-    const { pressure = 0 } = barometerDatas;
     return (
         <View>
             <Text style={styles.title}>Current direction {currentDirection} </Text>

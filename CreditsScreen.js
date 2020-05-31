@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { View, Text,TextInput, Button, Dimensions,FlatList, TouchableOpacity, StyleSheet, StatusBar, Alert } from 'react-native';
+import { View, Text,TextInput, Button, StyleSheet} from 'react-native';
 import * as firebase from 'firebase';
 
 
@@ -42,8 +42,6 @@ export default function CreditsScreen({navigation}) {
     useEffect(() => {
       var autorRef = firebase.database().ref('autor');
       autorRef.once('value').then(snapshot => {
-        // snapshot.val() is the dictionary with all your keys/values from the '/store' path
-        // this.setState({ stores: snapshot.val() })
         const aut = {
           name: snapshot.val().name,
           surname: snapshot.val().surname,
@@ -53,8 +51,6 @@ export default function CreditsScreen({navigation}) {
         console.log(snapshot.val().name);
         console.log(snapshot.val().surname);
         console.log(snapshot.val().desc);
-        
-        // console.log(autor);
       })
 
       }, []);
@@ -93,7 +89,8 @@ const styles = StyleSheet.create({
     borderWidth: 2,
   },
   text: {
-    fontSize: 15
+    fontSize: 15,
+    width: "70%"
   },
   bigText: {
     fontSize: 15,

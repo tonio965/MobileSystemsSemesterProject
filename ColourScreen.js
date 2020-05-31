@@ -1,13 +1,9 @@
 import React, {useState, useEffect } from 'react';
-import { View, Text, Alert, TouchableOpacity, Button,StatusBar} from 'react-native';
-import { NavigationContainer,DefaultTheme, DarkTheme } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { useTheme } from '@react-navigation/native';
-import { color } from 'react-native-reanimated';
+import { View, Text, Alert, TouchableOpacity,StatusBar} from 'react-native';
+
 
 export default function ColourScreen({navigation}) {
     const [background, setBackground] = useState("white");
-    const [isVisible, setisVisible] = useState(false);
 
 
     useEffect(() => {
