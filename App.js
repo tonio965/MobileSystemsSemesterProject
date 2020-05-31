@@ -101,7 +101,7 @@ export default function App() {
           component={HomeScreen} 
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }}
         />
         <Stack.Screen 
@@ -123,7 +123,7 @@ export default function App() {
           component={AccelerometerScreen}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }} />
         
         <Stack.Screen 
@@ -131,7 +131,7 @@ export default function App() {
           component={OtherSensorsScreen}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }} />
 
         <Stack.Screen 
@@ -139,7 +139,7 @@ export default function App() {
           component={BarometerScreen}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }} />
         
         <Stack.Screen 
@@ -147,7 +147,7 @@ export default function App() {
           component={DeviceInfoScreen}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }} />
 
         <Stack.Screen 
@@ -155,7 +155,7 @@ export default function App() {
           component={CreditsScreen}
           options={{
             headerShown: true,
-            cardStyle: { backgroundColor: '#5718B4' },
+            // cardStyle: { backgroundColor: '#5718B4' },
           }} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -188,14 +188,14 @@ const styles = StyleSheet.create({
     width: '10%',
     padding: 15,
     borderRadius:20,
-    backgroundColor:'#5718B4',
+    backgroundColor:'#f2f2f2',
     height:10 
   },
   item4: {
     width: '100%',
     padding: 15,
     borderRadius:20,
-    backgroundColor:'#5718B4',
+    backgroundColor:'#f2f2f2',
     height:10 
   },
   text: {
